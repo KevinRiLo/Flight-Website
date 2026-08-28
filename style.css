@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/images/bg.avif);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin:0;
+    padding-left: 12rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    border-radius: 10%;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    
+}
+.nav-links a:hover {
+    background-color: #057aa1;
+}
