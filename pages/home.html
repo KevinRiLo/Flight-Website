@@ -2,26 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flt With Cruz</title>
+    <title>Fly With Cruz</title>
     <meta name="description" content="Roughly 155 characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/script.js" defer></script>
   </head>
   <body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <header>
-      <div id="logo">HTML</div>
       <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a>
-          <li><a href="training.html">Training</a>
-          <li><a href="aircraft.html">Aircraft</a>
-          <li><a href="about.html">About Me</a>
-          <li><a href="contact.html">Contact</a>
+        <img src="/images/logo.png" id="logo">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="aircraft.html">Aircraft</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <h1 style="text-align: center; font-size: 10rem; color: white; text-shadow: 1rem 1rem 3rem black;">Flight Instruction Tailored to You</h1>
-    <p style="text-align: center; font-size: 1.8rem; color:white; ">Modern aircraft, flexible scheduling, and expert one-on-one mentorship from your first discovery flight all the way to your checkride.</p>
+    <h1>Flight Instruction Tailored to You</h1>
+    <p style="text-align: center; font-size: 1.8rem; color:white; ">Modern aircraft, flexible scheduling, and expert one-on-one<br>mentorship from your first discovery flight all the way to your checkride.</p>
+    <div class="buttons">
+    <a class="book-button" href="contact.html">BOOK DISCOVERY FLIGHT</a>
+    <a class="training-button" href="training.html">VIEW TRAINING OPTIONS</a>
+    </div>
+    <div id="sec-two">
+      <div id="left">
+        <h5>THE MODERN EDGE</h5>
+        <h2>LEARN TO FLY IN MODERN EQUIPMENT</h2>
+        <p>Aviation has evolved, and your training environment should reflect that. By training in a modern aircraft equipped with advanced digital avionics, you build the glass-cockpit proficiency expected in professional aviation from day one. Preparing for the modern flight environment requires adaptable, forward-thinking mentorship, rather than just traditional instruction.</p>
+        <a id="explore-button" href="aircraft.html">EXPLORE THE AIRCRAFT</a>
+      </div>
+      <div id="right">
+        <img src="/images/vid1placeholder.avif">
+      </div>
+    </div>
+    <div id="steps">
+      <h3 style="color: white; font-size: 4rem; margin: 8rem auto 8rem auto;">YOUR PATH TO THE PILOT SEAT</h3>
+      <div id="step-one">
+        <h5>STEP 01</h5>
+        <h4>DISCOVERY FLIGHT</h4>
+        <p>Your journey starts in the air. This isn't just a ride; it is your first officially logged flight lesson. You will take the controls of the aircraft, experience modern aviation firsthand, and sit down with me afterward to build a customized training roadmap.</p>
+      </div>
+      <div class="vl"></div>
+      <div id="step-two">
+        <h5>STEP 02</h5>
+        <h4>FUNDAMENTALS & GROUND SCHOOL</h4>
+        <p>Great pilots are built on the ground and refined in the sky. We will combine 1-on-1 ground instruction to help you easily pass the FAA Knowledge Test, while our dual flight lessons focus heavily on mastering stick-and-rudder skills and modern digital avionics.</p>
+      </div>
+      <div class="vl"></div>
+      <div id="step-three">
+        <h5>STEP 03</h5>
+        <h4>FIRST SOLO & CROSS-COUNTRY</h4>
+        <p>Once you demonstrate consistent, safe aircraft control, you will reach the milestone every aviator remembers: flying the aircraft entirely by yourself. From there, we transition to cross-country flying, learning to navigate the airspace and polishing your maneuvers to exact FAA standards.</p>
+      </div>
+      <div class="vl"></div>
+      <div id="step-four">
+        <h5>STEP 04</h5>
+        <h4>THE CHECKRIDE</h4>
+        <p>The final hurdle. You will meet with an FAA Designated Pilot Examiner (DPE) for a two-part exam: an oral interview to test your aeronautical knowledge, followed by a practical flight test. Upon a successful landing, you officially earn your Private Pilot Certificate.</p>
+      </div>
+      <div class="vl"></div>
+      <div id="step-five">
+        <h5>STEP 05</h5>
+        <h4>ADVANCED RATINGS & MORE</h4>
+        <p>Upon certification, your education continues with new challenges. We can transition into Instrument Ratings, Commercial licensing, or specialized training to broaden your capabilities and ensure you remain a sharp, safe pilot for life.</p>
+      </div>
+      <div class="vl"></div>
+      <div id="final-step">
+        <h1>READY TO TAKE THE CONTROLS?</h1>
+        <p style="color: white; font-size: 2.2rem;">Whether you're looking for your first discovery flight or starting professional pilot training, your journey begins here with expert mentorship and modern equipment.</p>
+        <a href="/pages/contact.html">BOOK NOW</a>
+      </div>
+    </div>
+    <div id="bottom-bar">
+      <ul id="items">
+        <li>CERTIFIED INSTRUCTION</li>
+        <li class="lvl"></li>
+        <li>GARMIN AVIONICS</li>
+        <li class="lvl"></li>
+        <li>FLEXIBLE SCHEDULING</li>
+        <li class="lvl"></li>
+        <li>5-STAR RATING</li>
+      </ul>
+    </div>
+    <footer>
+      <img src="/images/logo.png" id="logo">
+      <div id="socials">
+        <a id="fb" href="https://www.facebook.com/flywithcruz/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a id="ig" href="https://www.instagram.com/flywithcruz_/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a id="ln" href="https://www.linkedin.com/in/cruzcoloma" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

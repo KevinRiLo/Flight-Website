@@ -1,31 +1,298 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(/images/bg.avif);
+    margin:0;
+    padding: 0;;
+}
+header {
+    background-color: #00a2ff35;
+}
+#logo {
+    height: 6rem;
+    width: auto;
+    display: block;
 }
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 1rem 4rem;
 }
 .nav-links {
     list-style: none;
     display: flex;
-}
-.nav-links li {
-    margin:0;
-    padding-left: 12rem;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
 }
 .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
     transition: color 0.3s ease;
-    border-radius: 10%;
+    border-radius: 4%;
     display: inline-block;
     padding: 1rem 2.5rem;
     
 }
 .nav-links a:hover {
     background-color: #057aa1;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+}
+h1 {
+    text-align: center;
+    font-size: 10rem;
+    max-width: 100%;
+    color: white;
+    text-shadow: 1rem 1rem 3rem black;
+}
+.buttons {
+    text-align: center;
+    padding: 2rem;
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+.book-button, .book-button:visited {
+    background-color: #00a2ff;
+    text-decoration: none;
+    color: inherit;
+    padding: 2rem;
+    border: 0.1rem solid white;
+    border-radius: 3%;
+}
+.training-button, .training-button:visited {
+    text-decoration: none;
+    color: inherit;
+    padding: 2rem;
+    border: 0.1rem solid white;
+    border-radius: 3%;
+}
+.book-button:hover {
+    background-color: #057aa1;
+}
+.training-button:hover {
+    background-color: #54626b90;
+    fill-opacity: 50%;
+}
+#sec-two {
+    background-color: #02173b;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+#left, #right {
+    width: 50%;
+}
+#sec-two h5 {
+    color: #00a2ff;
+    font-size: 2rem;
+}
+#sec-two h2 {
+    color: white;
+    font-size: 5rem;
+}
+#sec-two p {
+    color: #a1b7c4;
+    font-size: 2.4rem;
+}
+#sec-two img {
+    border: 0.1rem solid white;
+    border-radius: 3%;
+    
+}
+#right {
+    text-align: center;
+}
+#explore-button, #explore-button:visited {
+    display: block;
+    width: max-content;
+    text-decoration: underline;
+    border: 0.1rem solid white;
+    border-radius: 2%;
+    font-size: 1.5rem;
+    padding: 2rem;
+    color:white;
+    margin: 2rem auto 2rem auto;
+}
+#explore-button:hover {
+    background-color: #057aa190;
+}
+#steps {
+    background-color: #02173b;
+    padding: 2rem;
+    text-align: center;
+}
+#step-one, #step-two, #step-three, #step-four, #step-five {
+    text-align: center;
+    width: 40rem;
+    margin: 2rem auto 2rem auto;
+    border: 0.1rem solid #a1b7c4;
+    border-radius: 1%;
+    padding: 2rem;
+}
+#steps h5 {
+    color: #00a2ff;
+    font-size: 2rem;
+}
+#steps h4 {
+    color: white;
+    font-size: 2.5rem;
+}
+#steps p {
+    color: #a1b7c4;
+    font-size: 1.5rem;
+}
+.vl {
+    border-left: .2rem solid #00a2ff;
+    height: 5rem;
+    display: inline-block;
+}
+#final-step h1{
+    color: white;
+    font-size: 4.5rem;
+}
+#final-step p {
+    margin: 2rem auto 2rem auto;
+    max-width: 40%;
+}
+#final-step a, #final-step a:visited {
+    display: inline-block;
+    background-color: #00a2ff;
+    text-decoration: none;
+    color: white;
+    padding: 3rem 8rem 3rem 8rem;
+    border: 0.1rem solid white;
+    border-radius: 3%;
+    margin: 2rem auto 8rem auto;
+    font-size: 1.5rem;
+}
+#final-step a:hover {
+    background-color: #02173b;
+}
+#bottom-bar {
+    background-color: #97abb8;
+    padding: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+#bottom-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.lvl {
+    border-left: .1rem solid white;
+    height: 3rem;
+}
+footer {
+    padding: 2rem;
+    background-color: #02173b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#socials {
+    margin-left: auto;
+}
+footer img {
+    margin-right: auto;
+}
+#socials a, #socials a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+}
+footer ion-icon {
+    transition: color 0.3s ease;
+}
+footer ion-icon[name="logo-facebook"]:hover {
+    color: #1877F2;
+}
+
+footer ion-icon[name="logo-instagram"]:hover {
+    color: #E4405F;
+}
+
+footer ion-icon[name="logo-linkedin"]:hover {
+    color: #0A66C2;
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    h1 {
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+        position: relative;
+    }
+
+    #logo {
+        margin-left: 2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 1rem 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-top: 0;
+
+        transition: 
+            max-height .4s ease,
+            opacity .3s ease,
+            margin-top .4s ease;
+    }
+    .nav-links.active {
+        max-height: 32rem;
+        opacity: 1;
+        margin-top: 1.5rem;
+    }
+
+    .nav-links li {
+        padding-left: 0;
+        margin: 0.5rem 0;
+    }
+
+    .nav-links a {
+        padding: 0.8rem 1.5rem;
+        width: 80%;
+    }
+
+    #sec-two div {
+        width: 100%;
+    }
+    .lvl {
+        border: none;
+    }
 }
