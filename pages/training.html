@@ -2,23 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flt With Cruz</title>
+    <title>Fly With Cruz</title>
     <meta name="description" content="Roughly 155 characters">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
   </head>
-  <body>
+  <body id="training">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <header>
-      <div id="logo">HTML</div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a>
-          <li><a href="training.html">Training</a>
-          <li><a href="aircraft.html">Aircraft</a>
-          <li><a href="about.html">About Me</a>
-          <li><a href="contact.html">Contact</a>
+      <nav class="navbar">
+        <img src="/images/logo.png" id="logo">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="aircraft.html">Aircraft</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </header>
+    <h1>TRAINING PROGRAMS</h1>
+    <p id="train-desc">From your very first flight to professional certifications, I offer comprehensive training programs designed to make you a safe and proficient pilot.</p>
+    <div id="training-options">
+      <div id="ppl-info">
+        <h2>Private Pilot Certificate (PPL)</h2>
+        <p>Master the fundamentals of flight and earn your wings for personal travel. This foundational program builds the core skills needed for any aviation journey.</p>
+        <a href="/pages/ppl.html">LEARN MORE</a>
+      </div>
+      <div id="ira-info">
+        <h2>Instrument Rating (IRA)</h2>
+        <p>Enhance your safety and precision by learning to fly solely by reference to instruments. Navigate through challenging weather systems with professional-grade confidence.</p>
+        <a href="/pages/ppl.html">LEARN MORE</a>
+      </div>
+      <div id="cpl-info">
+        <h2>Commercial Pilot Certificate (CPL)</h2>
+        <p>Refine your piloting skills to professional standards and prepare for a career in aviation. Gain the mastery required to fly complex aircraft for compensation.</p>
+        <a href="/pages/ppl.html">LEARN MORE</a>
+      </div>
+      <div id="discovery-info">
+        <h2>Discovery Flight</h2>
+        <p>Experience your first lesson at the controls and see the world from a new perspective. Determine if flight training is the right fit for your future goals.</p>
+        <a href="/pages/ppl.html">BOOK NOW</a>
+      </div>
+    </div>
+    <div id="program-highlights">
+      <h1 style="color: #02173b; font-size: 6rem; text-shadow: none; width: 100%; text-align: center;">Program Highlights</h1>
+      <div>
+        <h3>Modern Fleet</h3>
+        <p>Train in late-model aircraft equipped with Garmin glass cockpits, ensuring you are prepared for the technology used in professional aviation today.</p>
+      </div>
+      <div>
+        <h3>Tailored Mentorship</h3>
+        <p>Forget the factory-style instruction. Receive personalized, one-on-one mentorship that adapts to your learning pace and professional goals.</p>
+      </div>
+      <div>
+        <h3>Flexible Paths</h3>
+        <p>Whether you're aiming for a major airline or flying for recreation, we structure your training to maximize efficiency and skill retention.</p>
+      </div>
+    </div>
+    <div id="train-end">
+      <div>
+        <h1 style="font-size: 4rem; text-shadow: none;">READY TO TAKE THE CONTROLS?</h1>
+        <p>Whether you're looking for your first discovery flight or starting professional pilot training, your journey begins here with expert mentorship and modern equipment.</p>
+        <a href="/pages/contact.html">BOOK NOW</a>
+      </div>
+    </div>
+    <footer>
+      <img src="/images/white_logo.png" id="logo">
+      <p>© 2026 Fly With Cruz. All rights reserved.</p>
+      <div id="socials">
+        <a id="fb" href="https://www.facebook.com/flywithcruz/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a id="ig" href="https://www.instagram.com/flywithcruz_/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a id="ln" href="https://www.linkedin.com/in/cruzcoloma" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
