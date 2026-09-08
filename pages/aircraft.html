@@ -2,23 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flt With Cruz</title>
+    <title>Fly With Cruz</title>
     <meta name="description" content="Roughly 155 characters">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
   </head>
-  <body>
+  <body id="aircraft">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <header>
-      <div id="logo">HTML</div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a>
-          <li><a href="training.html">Training</a>
-          <li><a href="aircraft.html">Aircraft</a>
-          <li><a href="about.html">About Me</a>
-          <li><a href="contact.html">Contact</a>
+      <nav class="navbar">
+        <img src="/images/logo.png" id="logo">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="home.html" style="font-weight: bold;">Home</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="aircraft.html">Aircraft</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </header>
+    <h1>Master the Skies in the Alpha Trainer</h1>
+    <h2 id="plane-name">2024 PIPISTREL ALPHA TRAINER - N214EL</h2>
+    <div id="plane-sec-one">
+      <h3>The Advantage</h3>
+      <p style="color: white; font-size: 1.8rem; text-align: center;">Designed specifically for flight schools, the Alpha Trainer offers an ideal combination of safety, performance, and efficiency. Master the fundamentals in a modern technologically advanced cockpit.</p>
+      <div id="efficiency">
+        <h4>Efficiency</h4>
+        <p>Consumes only 3.6 gallons per hour, making professional training significantly more affordable.</p>
+      </div>
+      <div id="modern">
+        <h4>Modern Avionics</h4>
+        <p>Equipped with Garmin G3X Touch, providing a cutting edge digital flight deck experience.</p>
+      </div>
+      <div id="safety">
+        <h4>Safety First</h4>
+        <p>Features a whole-aircraft ballistic parachute system for ultimate peace of mind during training</p>
+      </div>
+    </div>
+    <div id="plane-sec-two">
+      <div id="specs">
+        <ul>
+          <li style="font-size: 3rem; font-weight: bold;">Technologically Advanced Cockpit</li>
+          <li>High-resolution Touchscreen Display</li>
+          <li>Advanced Navigation and Flight Planning</li>
+          <li>Fully Integrated 2-axis Autopilot</li>
+          <li>TAA Certified for Comprehensive Training</li>
+          <li>Synthetic Vision Technology Integration</li>
+          <li>Real-time Traffic and Weather Awareness</li>
+          <li>IFR Training Capabilites Enabled</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

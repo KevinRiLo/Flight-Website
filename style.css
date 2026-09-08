@@ -10,7 +10,7 @@ body {
 #home {
     background-image: url(/images/bg.avif);
 }
-#training {
+#training, #aircraft {
     background-image: url(/images/training_bg.avif);
 }
 header {
@@ -241,10 +241,11 @@ footer ion-icon[name="logo-linkedin"]:hover {
 #train-desc {
     color: white;
     font-size: 1.8rem;
-    text-align: left;
-    margin: 12rem;
+    text-align: center;
+    margin: 6rem auto;
     width: 40rem;
-    
+    padding: 3rem;
+    background-color: #02173b90;
 }
 
 #training-options {
@@ -262,7 +263,7 @@ footer ion-icon[name="logo-linkedin"]:hover {
     padding: 2rem;
     border-radius: 3%;
     text-align: center;
-    width: 19%
+    width: 18%
 }
 #training-options h2 {
     font-size: 2rem;
@@ -339,6 +340,58 @@ footer ion-icon[name="logo-linkedin"]:hover {
     background-color: #a8bbcd;
     border: .1rem solid white;
 }
+#plane-name {
+    color: #00a2ff;
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+    text-shadow: 1rem 1rem 3rem black;
+}
+#plane-sec-one {
+    background-color: #02173b;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#plane-sec-one h3 {
+    width: 100%;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+#efficiency, #modern, #safety {
+    background-color: white;
+    color: #02173b;
+    border: .1rem solid #00a2ff;
+    border-radius: 3%;
+    margin: 5rem auto;
+    width: 70%;
+    padding: 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+#plane-sec-one h4 {
+    color: #00a2ff;
+}
+#plane-sec-two {
+    background-image: url(/images/bg.avif);
+    padding: 3rem;
+}
+#plane-sec-two ul {
+    list-style: none;
+    color: white;
+    background: linear-gradient(#02173b80, #0A66C270, #0388d460, #00a2ff50);
+    text-align: center;
+    width: 70%;
+    margin: 4rem auto;
+    padding: 3rem;
+}
+#plane-sec-two li {
+    border-bottom: .1rem solid #00a2ff;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
 @media screen and (max-width: 768px) {
     body {
         background-position: center;
