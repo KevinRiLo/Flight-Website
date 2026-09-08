@@ -7,11 +7,20 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+a {
+    transition: .5s ease;
+}
 #home {
     background-image: url(/images/bg.avif);
 }
-#training, #aircraft {
+#training {
     background-image: url(/images/training_bg.avif);
+}
+#aircraft {
+    background-image: url(/images/aircraft_bg.avif);
+}
+#ppl {
+    background-image: url(/images/ppl_bg.avif);
 }
 header {
     background-color: #00a2ff35;
@@ -40,7 +49,7 @@ header {
     text-decoration: none;
     font-size: 1.5rem;
     transition: color 0.3s ease;
-    border-radius: 4%;
+    border-radius: 8px;
     display: inline-block;
     padding: 1rem 2.5rem;
     
@@ -76,21 +85,21 @@ h1 {
     text-decoration: none;
     color: inherit;
     padding: 2rem;
-    border: 0.1rem solid white;
-    border-radius: 3%;
+    border: 1px solid white;
+    border-radius: 8px;
 }
 .training-button, .training-button:visited {
     text-decoration: none;
     color: inherit;
     padding: 2rem;
-    border: 0.1rem solid white;
-    border-radius: 3%;
+    border: 1px solid white;
+    border-radius: 8px;
 }
 .book-button:hover {
-    background-color: #057aa1;
+    background-color: #02173b;
 }
 .training-button:hover {
-    background-color: #54626b90;
+    background-color: #02173b;
     fill-opacity: 50%;
 }
 #sec-two {
@@ -116,8 +125,8 @@ h1 {
     font-size: 2.4rem;
 }
 #sec-two img {
-    border: 0.1rem solid white;
-    border-radius: 3%;
+    border: 1px solid white;
+    border-radius: 8px;
     
 }
 #right {
@@ -128,7 +137,7 @@ h1 {
     width: max-content;
     text-decoration: underline;
     border: 0.1rem solid white;
-    border-radius: 2%;
+    border-radius: 8px;
     font-size: 1.5rem;
     padding: 2rem;
     color:white;
@@ -146,9 +155,18 @@ h1 {
     text-align: center;
     width: 40rem;
     margin: 2rem auto 2rem auto;
-    border: 0.1rem solid #a1b7c4;
-    border-radius: 1%;
+    border: 2px solid #a1b7c4;
+    border-radius: 8px;
     padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 162, 255, 0.25),
+        0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+#step-one:hover, #step-two:hover, #step-three:hover, #step-four:hover, #step-five:hover {
+    transform: translateY(-0.5rem);
+    box-shadow:
+        0 0 2rem rgba(0, 162, 255, 0.4),
+        0 1rem 3rem rgba(0, 0, 0, 0.4);
 }
 #steps h5 {
     color: #00a2ff;
@@ -163,7 +181,7 @@ h1 {
     font-size: 1.5rem;
 }
 .vl {
-    border-left: .2rem solid #00a2ff;
+    border-left: 2px solid #00a2ff;
     height: 5rem;
     display: inline-block;
 }
@@ -181,8 +199,8 @@ h1 {
     text-decoration: none;
     color: white;
     padding: 3rem 8rem 3rem 8rem;
-    border: 0.1rem solid white;
-    border-radius: 3%;
+    border: 1px solid white;
+    border-radius: 8px;
     margin: 2rem auto 8rem auto;
     font-size: 1.5rem;
 }
@@ -202,7 +220,7 @@ h1 {
     text-align: center;
 }
 .lvl {
-    border-left: .1rem solid white;
+    border-left: 2px solid white;
     height: 3rem;
 }
 footer {
@@ -250,29 +268,32 @@ footer ion-icon[name="logo-linkedin"]:hover {
 
 #training-options {
     background-color: #0388d4;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 2rem;
     padding: 2rem;
-    width: fit-content;
+    text-align: center;
 }
 #training-options div {
-    background-color: #a8bbcd;
-    margin: 1rem;
+    background-color: #02173b;
+    color: white;
+    border: 3px solid #00a2ff;
+    box-shadow: 0 0 1rem rgba(0, 162, 255, 0.25),
+        0 1rem 2rem rgba(0, 0, 0, 0.3);
     padding: 2rem;
-    border-radius: 3%;
+    border-radius: 8px;
     text-align: center;
-    width: 18%
 }
+
 #training-options h2 {
-    font-size: 2rem;
+    color: #00a2ff;
+    font-size: 3rem;
     margin: 2rem auto 4rem auto;
-    height: 4rem;
 }
 #training-options p {
     font-size: 1.5rem;
-    height: 15rem;
+    margin: 2rem auto;
 }
 #training-options a, #training-options a:visited {
     display: inline-block;
@@ -280,12 +301,13 @@ footer ion-icon[name="logo-linkedin"]:hover {
     text-decoration: none;
     color: black;
     padding: 2rem;
-    border: .1rem solid white;
-    border-radius: 3%;
+    border: 1px solid white;
+    border-radius: 8px;
     margin: auto auto 2rem auto;
 }
 #training-options a:hover {
-    background-color: #a8bbcd;
+    background-color: #02173b;
+    color: white;
 }
 
 #program-highlights {
@@ -298,11 +320,20 @@ footer ion-icon[name="logo-linkedin"]:hover {
 #program-highlights div {
     background-color: #dcddde;
     color: black;
-    border: .1rem solid #0388d4;
-    border-radius: 3%;
+    border: 2px solid #0388d4;
+    border-radius: 8px;
     text-align: center;
     padding: 2rem;
     width: 25%;
+    box-shadow: 0 0 1rem rgba(0, 162, 255, 0.25),
+        0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+#program-highlights div:hover {
+    transform: translateY(-0.5rem);
+    box-shadow:
+        0 0 2rem rgba(0, 162, 255, 0.4),
+        0 1rem 3rem rgba(0, 0, 0, 0.4);
 }
 #program-highlights h3 {
     font-size: 1.8rem;
@@ -322,7 +353,7 @@ footer ion-icon[name="logo-linkedin"]:hover {
     background-color: #a8bbcd;
     font-size: 1.8rem;
     padding: 3rem;
-    border-radius: 3%;
+    border-radius: 8px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -333,12 +364,12 @@ footer ion-icon[name="logo-linkedin"]:hover {
     display: inline-block;
     background-color: #00a2ff;
     padding: 2rem;
-    border: .1rem solid #a8bbcd;
-    border-radius: 5%;
+    border: 1px solid #a8bbcd;
+    border-radius: 8px;
 }
 #train-end a:hover {
     background-color: #a8bbcd;
-    border: .1rem solid white;
+    border: 1px solid white;
 }
 #plane-name {
     color: #00a2ff;
@@ -348,7 +379,7 @@ footer ion-icon[name="logo-linkedin"]:hover {
     text-shadow: 1rem 1rem 3rem black;
 }
 #plane-sec-one {
-    background-color: #02173b;
+    background-image: linear-gradient(to bottom right, #250137, #1a0799, #088af6);
     padding: 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -362,8 +393,8 @@ footer ion-icon[name="logo-linkedin"]:hover {
 #efficiency, #modern, #safety {
     background-color: white;
     color: #02173b;
-    border: .1rem solid #00a2ff;
-    border-radius: 3%;
+    border: 2px solid #00a2ff;
+    border-radius: 8px;
     margin: 5rem auto;
     width: 70%;
     padding: 3rem;
@@ -374,20 +405,24 @@ footer ion-icon[name="logo-linkedin"]:hover {
     color: #00a2ff;
 }
 #plane-sec-two {
-    background-image: url(/images/bg.avif);
+    background-image: url(/images/cockpit.avif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 3rem;
 }
 #plane-sec-two ul {
     list-style: none;
     color: white;
-    background: linear-gradient(#02173b80, #0A66C270, #0388d460, #00a2ff50);
+    background: linear-gradient(#02173b80, #0A66C280, #0388d480, #00a2ff80);
     text-align: center;
     width: 70%;
     margin: 4rem auto;
     padding: 3rem;
 }
 #plane-sec-two li {
-    border-bottom: .1rem solid #00a2ff;
+    border-bottom: 2px solid #00a2ff;
     font-size: 2rem;
     padding: 3rem;
 }
@@ -403,7 +438,9 @@ footer ion-icon[name="logo-linkedin"]:hover {
     h1 {
         padding: 0 1rem;
     }
-
+    #training-options {
+        grid-template-columns: 1fr;
+    }
     .navbar {
         display: flex;
         flex-wrap: wrap;
@@ -456,7 +493,7 @@ footer ion-icon[name="logo-linkedin"]:hover {
         width: 80%;
     }
 
-    #sec-two div, #training-options div {
+    #sec-two div {
         width: 100%;
     }
     #training-options p {
