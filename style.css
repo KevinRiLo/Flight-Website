@@ -461,7 +461,7 @@ footer ion-icon[name="logo-linkedin"]:hover {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     gap: 4rem;
-    padding: 13rem;
+    padding: 8rem;
     background-color: #02173b;
     color: white;
 }
@@ -590,6 +590,95 @@ footer ion-icon[name="logo-linkedin"]:hover {
 #pricing a:hover {
     background-color: #0A66C2;
 }
+#about {
+    background-color: #02173b;
+}
+#bio {
+    background-color: #02173b;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    box-sizing: border-box;
+}
+#bio p {
+    color: white;
+    font-size: 1.8rem;
+    padding: 3rem;
+    border-bottom: 1px solid white;
+}
+#bio h2 {
+    color: white;
+    font-size: 5rem;
+    padding-left: 3rem;
+}
+#bio img {
+    border: 1px solid white;
+    border-radius: 8px;
+    max-width: 500px;
+    height: 90%;
+    justify-self: center;
+    margin-top: 5rem;
+}
+#exp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+#exp h3 {
+    color: #00a2ff;
+}
+#exp h4 {
+    color: #a8bbcd;
+}
+#certs {
+    background-color: #dcddde;
+    display: grid;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 3rem 12rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+#certs p {
+    background-color: #eeeeee;
+    color: #02173b;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    border: 1px solid #00a2ff;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem rgba(0, 162, 255, 0.25),
+        0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+#certs p:hover {
+    transform: translateY(-0.5rem);
+    box-shadow:
+        0 0 2rem rgba(0, 162, 255, 0.4),
+        0 1rem 3rem rgba(0, 0, 0, 0.4);
+}
+.card-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.card-medium {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.card-tall {
+    grid-column: span 1;
+    grid-row: span 2;
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -668,5 +757,14 @@ footer ion-icon[name="logo-linkedin"]:hover {
     }
     .dropdown:hover .dropdown-menu{
     display: none;
-}
+    }
+    #bio {
+        grid-template-columns: 1fr;
+    }
+    #bio img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
