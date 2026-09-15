@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin:0;
     padding: 0;;
     background-size: cover;
@@ -84,7 +86,7 @@ header {
 }
 h1 {
     text-align: center;
-    font-size: 9rem;
+    font-size: 8rem;
     max-width: 100%;
     color: white;
     text-shadow: 1rem 1rem 3rem black;
@@ -124,10 +126,10 @@ h1 {
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
 }
 #left, #right {
-    width: 50%;
+    flex: 1;
+    margin: 3rem;
 }
 #sec-two h5 {
     color: #00a2ff;
@@ -135,7 +137,7 @@ h1 {
 }
 #sec-two h2 {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 #sec-two p {
     color: #a1b7c4;
@@ -144,7 +146,7 @@ h1 {
 #sec-two img {
     border: 1px solid white;
     border-radius: 8px;
-    
+    margin-top: 5rem;
 }
 #right {
     text-align: center;
@@ -261,18 +263,17 @@ footer img {
     color: white;
     font-size: 4rem;
 }
-footer ion-icon {
+ion-icon {
     transition: color 0.3s ease;
 }
-footer ion-icon[name="logo-facebook"]:hover {
+ion-icon[name="logo-facebook"]:hover {
     color: #1877F2;
 }
-
-footer ion-icon[name="logo-instagram"]:hover {
+ion-icon[name="logo-instagram"]:hover {
     color: #E4405F;
 }
 
-footer ion-icon[name="logo-linkedin"]:hover {
+ion-icon[name="logo-linkedin"]:hover {
     color: #0A66C2;
 }
 
@@ -290,13 +291,13 @@ footer ion-icon[name="logo-linkedin"]:hover {
 }
 
 #training-options {
-    background-color: #0388d4;
+    background-color: #00a2ff;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
     gap: 2rem;
-    padding: 2rem;
+    padding: 6rem;
     text-align: center;
+    margin-top: 15rem;
 }
 #training-options div {
     background-color: #02173b;
@@ -347,7 +348,8 @@ footer ion-icon[name="logo-linkedin"]:hover {
     border-radius: 8px;
     text-align: center;
     padding: 2rem;
-    width: 25%;
+    flex: 1;
+    margin: 3rem;
     box-shadow: 0 0 1rem rgba(0, 162, 255, 0.25),
         0 1rem 2rem rgba(0, 0, 0, 0.3);
     transition: transform .3s ease, box-shadow .3s ease;
@@ -402,15 +404,16 @@ footer ion-icon[name="logo-linkedin"]:hover {
     text-shadow: 1rem 1rem 3rem black;
 }
 #plane-sec-one {
-    background-image: linear-gradient(to bottom right, #250137, #1a0799, #088af6);
-    padding: 7rem;
+    background-image: linear-gradient(to bottom right, #02173b, #120854, #094c74);
+    padding: 5rem;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30rem;
 }
 #plane-sec-one h3 {
     width: 100%;
     color: white;
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
 }
 #efficiency, #modern, #safety {
@@ -419,10 +422,20 @@ footer ion-icon[name="logo-linkedin"]:hover {
     border: 2px solid #00a2ff;
     border-radius: 8px;
     margin: 5rem auto;
-    width: 70%;
     padding: 3rem;
     text-align: center;
     font-size: 3rem;
+    width: 60%;
+
+    box-shadow: 0 0 1rem rgba(0, 162, 255, 0.25),
+        0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+#efficiency:hover, #modern:hover, #safety:hover {
+    transform: translateY(-0.5rem);
+    box-shadow:
+        0 0 2rem rgba(0, 162, 255, 0.4),
+        0 1rem 3rem rgba(0, 0, 0, 0.4);
 }
 #plane-sec-one h4 {
     color: #00a2ff;
@@ -493,7 +506,8 @@ footer ion-icon[name="logo-linkedin"]:hover {
     padding: 1rem;
     text-align: center;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 4px 4px 10px black;
+    margin-top: 20rem;
 }
 #specs h3 {
     color: #00a2ff;
@@ -679,6 +693,79 @@ footer ion-icon[name="logo-linkedin"]:hover {
     grid-column: span 1;
     grid-row: span 2;
 }
+#about-end {
+    background-color: #00a2ff;
+    color: white;
+    text-align: center;
+    padding: 4rem;
+    width: 70%;
+    margin: 6rem auto;
+    border-radius: 8px;
+}
+#about-end h2 {
+    font-size: 4rem;
+}
+#about-end p {
+    font-size: 2rem;
+}
+#about-end a, #about-end a:visited {
+    display: inline-block;
+    font-size: 3rem;
+    border: 2px solid #02173b;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #02173b;
+    padding: 3rem;
+    background-color: #eeeeee;
+}
+#about-end a:hover {
+    background-color: #00a2ff;
+    color: white;
+    border-color: white;
+}
+
+#contact {
+    background-color: #02173b;
+}
+#contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: space-around;
+}
+#contact-info, #contact-right {
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 3rem;
+    color: white;
+    flex: 1;
+    margin: 4rem;
+}
+#contact-info li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 3rem;
+}
+#contact-info a, #contact-info a:visited {
+    text-decoration: none;
+    color: inherit;
+    font-size: 4rem;
+}
+#contact-right {
+    font-size: 3rem;
+    text-align: center;
+}
+#contact-right a, #contact-right a:visited {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    padding: 3rem;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+#contact-right a:hover {
+    background-color: #00a2ff;
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -745,9 +832,8 @@ footer ion-icon[name="logo-linkedin"]:hover {
         padding: 0.8rem 1.5rem;
         width: 80%;
     }
-
-    #sec-two div {
-        width: 100%;
+    #left {
+        text-align: center;
     }
     #training-options p {
         height: auto;
@@ -767,4 +853,5 @@ footer ion-icon[name="logo-linkedin"]:hover {
         object-fit: cover;
         object-position: center;
     }
+
 }
