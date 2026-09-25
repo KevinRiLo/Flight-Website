@@ -402,7 +402,7 @@ ion-icon[name="logo-linkedin"]:hover {
 }
 
 #program-highlights {
-    background-color: #a8bbcd;
+    background: linear-gradient(135deg, #f4f6f7 0%, #67bced 100%);
     padding: 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -458,6 +458,7 @@ ion-icon[name="logo-linkedin"]:hover {
     padding: 2rem;
     border: 1px solid #a8bbcd;
     border-radius: 8px;
+    margin-top: 2rem;
 }
 #train-end a:hover {
     background-color: #a8bbcd;
