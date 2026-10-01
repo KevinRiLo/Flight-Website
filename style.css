@@ -177,6 +177,9 @@ h1 {
     padding: 2rem;
     border: 1px solid white;
     border-radius: 8px;
+    background: #00000015;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 .book-button:hover {
     background-color: #02173b;
@@ -207,7 +210,7 @@ h1 {
     color: #a1b7c4;
     font-size: 2.4rem;
 }
-#sec-two img {
+#sec-two video {
     border: 1px solid white;
     border-radius: 8px;
     margin-top: 5rem;
@@ -218,7 +221,7 @@ h1 {
 #explore-button, #explore-button:visited {
     display: block;
     width: max-content;
-    text-decoration: underline;
+    text-decoration: none;
     border: 0.1rem solid white;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -227,7 +230,7 @@ h1 {
     margin: 2rem auto 2rem auto;
 }
 #explore-button:hover {
-    background-color: #057aa190;
+    background-color: #00a2ff;
 }
 #steps {
     background-color: #02173b;
@@ -421,7 +424,7 @@ ion-icon[name="logo-linkedin"]:hover {
         0 1rem 2rem rgba(0, 0, 0, 0.3);
     transition: transform .3s ease, box-shadow .3s ease;
 }
-#program-highlights div:hover, #learn-grid div:hover {
+#program-highlights div:hover, #learn-grid div:hover, #curriculum div:hover {
     transform: translateY(-0.5rem);
     box-shadow:
         0 0 2rem rgba(0, 162, 255, 0.4),
@@ -597,12 +600,20 @@ ion-icon[name="logo-linkedin"]:hover {
     background-color: #dcddde;
     padding: 2rem;
     margin: 2rem auto;
+    border: 2px solid #00a2ff;
     border-radius: 8px;
     max-width: 800px;
     font-size: 2.5rem;
+
+    box-shadow: 0 0 1rem rgba(0, 162, 255, 0.25),
+        0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 #curriculum h6 {
     color: #00a2ff;
+}
+#curriculum h6, #curriculum h5, #curriculum p {
+    padding: .5rem;
 }
 #requirements {
     padding: 3rem;
@@ -666,11 +677,13 @@ ion-icon[name="logo-linkedin"]:hover {
     text-decoration: none;
     padding: 2rem;
     background-color: #00a2ff;
+    border: 2px solid #00a2ff;
     border-radius: 8px;
     font-size: 1.8rem;
 }
 #pricing a:hover {
-    background-color: #0A66C2;
+    background-color: #a8bbcd;
+    border-color: white;
 }
 #about {
     background-color: #02173b;
