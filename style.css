@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
     font-family: "Montserrat", sans-serif;
     background-size: cover;
@@ -149,29 +150,39 @@ header {
 }
 h1 {
     text-align: center;
-    font-size: 8rem;
+    font-size: 7.5rem;
     max-width: 100%;
     color: white;
     text-shadow: 1rem 1rem 3rem black;
 }
 
 .buttons {
-    text-align: center;
     padding: 2rem;
     color:white;
     text-decoration: none;
     font-size: 1.5rem;
-    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
 }
 .book-button, .book-button:visited {
+    text-align: center;
     background-color: #00a2ff;
     text-decoration: none;
     color: inherit;
     padding: 2rem;
     border: 1px solid white;
     border-radius: 8px;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
 }
 .training-button, .training-button:visited {
+    text-align: center;
     text-decoration: none;
     color: inherit;
     padding: 2rem;
@@ -180,6 +191,12 @@ h1 {
     background: #00000015;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
 }
 .book-button:hover {
     background-color: #02173b;
@@ -543,11 +560,16 @@ ion-icon[name="logo-linkedin"]:hover {
 #learn-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
     gap: 4rem;
     padding: 8rem;
     background-color: #02173b;
     color: white;
+}
+#learn-head {
+    grid-column: span 3;
+    grid-row: span 2; 
+    background-color: #00a2ff;
+    font-size: 8rem;
 }
 #learn-grid div {
     background-color: #00a2ff60;
@@ -564,9 +586,6 @@ ion-icon[name="logo-linkedin"]:hover {
 }
 #learn-grid p {
     font-size: 2rem;
-}
-#learn-grid h2 {
-    font-size: 9rem;
 }
 #specs {
     display: flex;
@@ -939,23 +958,74 @@ ion-icon[name="logo-linkedin"]:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        background-position: center;
+        background-position: center top;
+        background-size: 300% auto;
+    }
+    #home {
+        background-size: 200% auto;
     }
     html {
         font-size: 50%;
     }
-
+    #certs {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .card-large, .card-medium, .card-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
     h1 {
         padding: 0 1rem;
+        font-size: 4rem;
+    }
+    .buttons a {
+        max-width: none;
     }
     #training-options, #learn-grid {
         grid-template-columns: 1fr;
     }
-    #logo {
-        display: none;
+    #training-options {
+        padding: 2rem;
+    }
+    #efficiency, #modern, #safety {
+        width: 100%;
+    }
+    #plane-sec-two ul {
+        margin: 0;
+        width: 100%;
+    }
+    .nav-container {
+        width: 100%;
+        padding: 0 10px;
     }
     .nav-links {
-        gap: 15px;
+        gap: 5px;
+    }
+    .buttons {
+        gap: 1rem;
+    }
+
+    #left, #right {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+    #bottom-bar ul {
+        font-size: 1.3rem;
+    }
+    #final-step {
+        padding: 1rem;
+    }
+    #final-step p {
+        max-width: none;
+        width: 100%;
+        padding:2rem;
     }
     #left {
         text-align: center;
@@ -980,12 +1050,23 @@ ion-icon[name="logo-linkedin"]:hover {
     }
     #learn-grid {
         padding: 1rem;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    #learn-head {
+    grid-column: span 1;
+    grid-row: span 1; 
+    background-color: #00a2ff;
+    font-size: 1rem;
     }
     #certs {
         padding: 1rem;
     }
+    #socials a, #socials a:visited {
+    font-size: 2.5rem;
+    }
 }
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1200px) {
     #logo {
         display: none;
     }
